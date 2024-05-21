@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: springboot
+  
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  
+  datasource:
+    users:
+      url: jdbc:postgresql://localhost:32768/users?createDatabaseIfNotExist=true
+      username: root
+      password: password
+    blogs:
+      url: jdbc:postgresql://localhost:32768/blogs?createDatabaseIfNotExist=true
+      username: root
+      password: password
+    music:
+      url: jdbc:postgresql://localhost:32768/music?createDatabaseIfNotExist=true
+      user: root
+      password: password
