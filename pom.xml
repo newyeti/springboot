@@ -16,6 +16,7 @@
 
   <modules>
     <module>multidatasource</module>
+		<module>multitenancy</module>
   </modules>
 
 	<properties>

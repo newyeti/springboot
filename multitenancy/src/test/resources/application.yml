@@ -1,0 +1,14 @@
+tenant:
+    default-tenant-id: DS1
+    datasources:
+    -
+      tenant-id: DS1
+      url: jdbc:h2:mem:/music?createDatabaseIfNotExist=true
+      username: ds1
+      password: ds1password    
+    
+    -
+      tenant-id: DS2
+      url: jdbc:h2:mem:/music?createDatabaseIfNotExist=true
+      username: ds2
+      password: ds2password  

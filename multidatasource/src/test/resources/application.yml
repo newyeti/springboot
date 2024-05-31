@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  
+  datasource:
+    users:
+      url: jdbc:h2:mem:/users?createDatabaseIfNotExist=true
+      username: sa
+      password: password
+      driverClassName: org.h2.Driver
+    blogs:
+      url: jdbc:h2:mem:/blogs?createDatabaseIfNotExist=true
+      username: sa
+      password: password
+      driverClassName: org.h2.Driver
+    music:
+      url: jdbc:h2:mem:/music?createDatabaseIfNotExist=true
+      user: sa
+      password: password
+      driverClassName: org.h2.Driver

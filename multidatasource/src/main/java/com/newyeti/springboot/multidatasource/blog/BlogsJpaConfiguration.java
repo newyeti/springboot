@@ -1,5 +1,4 @@
 package com.newyeti.springboot.multidatasource.blog;
-
 import java.util.Objects;
 
 import javax.sql.DataSource;

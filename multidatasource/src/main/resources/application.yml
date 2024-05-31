@@ -6,17 +6,20 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   
   datasource:
     users:
-      url: jdbc:postgresql://localhost:32768/users?createDatabaseIfNotExist=true
+      url: jdbc:postgresql://localhost:32768/users
       username: root
       password: password
     blogs:
-      url: jdbc:postgresql://localhost:32768/blogs?createDatabaseIfNotExist=true
+      url: jdbc:postgresql://localhost:32768/blogs
       username: root
       password: password
     music:
-      url: jdbc:postgresql://localhost:32768/music?createDatabaseIfNotExist=true
+      url: jdbc:postgresql://localhost:32768/music
       user: root
       password: password
